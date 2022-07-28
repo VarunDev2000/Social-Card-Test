@@ -1,9 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg"
+import "./App.css"
+import { Routes, Route, Navigate } from "react-router-dom"
+import WebPagePreview from "./WebPagePreview/WebPagePreview"
+import ErrorPage from "./ErrorPage/ErrorPage"
+import HomePage from "./Home/Home"
 
 function App() {
   return (
     <div className="App">
+      <Routes>
+        <Route path="/" exact element={<HomePage />} />
+        <Route path="/error" exact element={<ErrorPage />} />
+        <Route path="*" element={<Navigate to="/error" />} />
+      </Routes>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,7 +28,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
