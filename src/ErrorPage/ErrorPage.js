@@ -4,7 +4,7 @@ import WebPagePreview from ".././WebPagePreview/WebPagePreview"
 const ErrorPage = (props) => {
   return (
     <>
-      <WebPagePreview title="Error" metaDescription="Something went wrong" />
+      {/* <WebPagePreview title="Error" metaDescription="Something went wrong" /> */}
       <div>Error Page</div>
     </>
   )
