@@ -11,10 +11,6 @@ const HomePage = (props) => {
 
   return (
     <>
-      <WebPagePreview
-        title="Payit Home"
-        metaDescription="Welcome to home of Payit"
-      />
       <div>Home Page</div>
       <button onClick={() => handleClick()}>To Error page</button>
     </>
