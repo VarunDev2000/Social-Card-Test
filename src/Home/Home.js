@@ -10,11 +10,7 @@ const HomePage = (props) => {
   }
 
   useEffect(() => {
-    let doc = document.getElementById("og:title")
-    doc.setAttribute("content", "Payit - Home")
-    return () => {
-      doc.setAttribute("content", "Payit - Click here to claim funds")
-    }
+    document.getElementsByTagName("meta")["og:title"].content = "Hello"
   })
 
   return (
